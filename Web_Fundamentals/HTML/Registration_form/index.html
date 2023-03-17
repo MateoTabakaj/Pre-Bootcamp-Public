@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        First Name:*<input type="text" name="Firtsname" required><br>
+        Last Name:*<input type="text" name="lastname" required><br>
+        Email Address:*<input type="email" name="email" id="email" required><br>
+        Password:*<input type="password" name="password" required><br>
+        Confirm Password:* <input type="password" name="cinfirm-password" required><br>
+        Birthday:<input type="date" name="Birthday" id="Birthday"><br>
+        Gender Indetity: <br>
+        <input type="radio" name="Male" id="Male">Male 
+        <input type="radio" name="Female" id="female">Female 
+        <input type="radio" name="non-binary" id="non-binary">Non-binary 
+        <input type="radio" name="no-answer" id="no-answer">I prefer not to answer <br>
+        A short description about myself: <br><textarea name="" id="" cols="19" rows="3"></textarea><br>
+        Favorite Language : <select name="Language">
+            <option value="Javascript">Javascript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Node">Node</option>
+        </select><br>
+        <input type="checkbox" name="yes" id="yes">Yes, I would like to recive periodic email updates <br>
+        <input type="button" value="Create Account" placeholder="Create Account" required><br>
+        *Indicates a required field
+    </body>
+</html>
