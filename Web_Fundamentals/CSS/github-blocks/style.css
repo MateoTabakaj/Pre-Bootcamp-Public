@@ -1,15 +1,9 @@
-#dojo {
-    width: 400px;
-    height: 200px;
-    background-color: grey;
-}
-
 .container{
-    width: 400px;
+    width: 340px;
     height: 400px;
     background-color: #f0f0f0e0;
     margin: 0px auto;
-    padding: 10px;
+    padding-top: 30px;
     justify-content: center;
     display: flex;
     align-self: center;
@@ -24,10 +18,9 @@ img{
 }
 
 #octocat {
-    height: 200px;
+    height: 190px;
     display: flex;
     align-self: start;
-    
     margin: 10px;
     flex-direction: column;
     
@@ -41,9 +34,9 @@ img.octocat {
 .sub-content {
     background-color: cyan;
     margin-left: 10px;
-    margin-right: 10px;
+    /*margin-right: 10px;
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 100px;*/
     display: flex;
     height: 100px;
     padding: 10px;
