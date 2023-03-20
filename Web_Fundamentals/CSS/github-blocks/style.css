@@ -38,11 +38,6 @@ img.octocat {
     justify-content: space-between;
 }
 
-head{
-    color: #141421eb;
-    display: flexbox;
-}
-
 .sub-content {
     background-color: cyan;
     margin-left: 10px;
