@@ -1,0 +1,27 @@
+.row{
+    display: flex;
+    margin: 10px;
+
+    justify-content: space-evenly;
+}
+
+.col{
+    background-color: #6abebeb9;
+    flex:1;
+    padding: 10px;
+    margin: 10px;
+}
+
+.col-2{
+    background-color: #6abebeb9;
+    flex: 2;
+    padding: 10px;
+    margin: 10px;
+}
+
+.col-3{
+    background-color: #6abebeb9;
+    flex: 3;
+    padding: 10px;
+    margin: 10px;
+}
