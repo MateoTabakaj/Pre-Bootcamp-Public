@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dear Sans", serif;
+}
+
+.contanier{
+    border: 5px solid silver;
+    width: 800px;
+    height: 330px;
+    display: block;
+    margin: 40px 25%;
+}
+
+.head, .main, .footer{
+    margin: 20px;
+}
+.head{
+    background-color: #0a92a7;
+    margin: -5px -5px 0 -5px;
+    height: 100px;
+}
+
+.head img{
+    width: 70px;
+    height: 70px;
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+    margin: 60px;
+}
+
+img{
+    width: 10px;
+    height: 15px;
+}
+
+.loc{
+    display: flex;
+    margin: 10px;
+}
+
+.loc p{
+    padding-left: 10px;
+    padding-top: -10px;
+}
+
+.main{
+    margin: 20px;
+    padding: 10px;
+}
+
+.footer img{
+    width: 15px;
+    height: 15px;
+
+}
+
+.footer p{
+    display: inline;
+    margin-left: 2px ;
+
+}
+
+.footer{
+    text-decoration: none;
+}
