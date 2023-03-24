@@ -1,3 +1,3 @@
 # Hello World
-    
-This is a readme for our first project!
+
+Those are Coding Dojo assignments
