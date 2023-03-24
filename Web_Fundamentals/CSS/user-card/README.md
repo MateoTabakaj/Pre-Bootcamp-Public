@@ -1,3 +1,3 @@
-#Dojo Assigments
+#Dojo Assignments
 
 Making a user card

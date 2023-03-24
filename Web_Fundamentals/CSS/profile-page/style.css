@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dear Sans", serif;
+}
+body{
+    max-width:  2112px;
+}
+
+/* Style for navigation */
+
+.nav{
+    background-color: black;
+    color: white;
+    height: 80px;
+    text-decoration: none;
+    display: flex;
+    margin-left: 0px;
+    justify-content: safe;
+}
+
+.nav a{
+    color: white;
+    padding: 0 20px;
+    text-decoration: none; 
+    margin-top: 10px;
+
+}
+
+#text{
+    display: flex;
+    font-size: 39px;
+    font-weight: 10 ;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav li{
+    text-decoration: none;
+    margin:20px 10px;
+
+}
+
+button{
+    color: rgba(255, 255, 255, 0.813);
+    background-color: rgba(0, 255, 255, 0.717);
+    height: 35px;
+    width: 99px;
+    margin-top: 20px;
+}
+/* Style for main */
+.main{
+    background-color: white;
+    max-width: 75%;
+}
