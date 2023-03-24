@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/1d3318965570caf9202f053c56a5375b?family=Dear+Sans" rel="stylesheet"
+        type="text/css" />
     <title>Profile</title>
     <link rel="stylesheet" href="style.css">
-    <link href="//db.onlinewebfonts.com/c/1d3318965570caf9202f053c56a5375b?family=Dear+Sans" rel="stylesheet" type="text/css"/>
 </head>
+
 <body>
     <!-- Div for top navigation  -->
     <div class="nav">
-        <h2 ><a href="#" id="text"> Profile</a></h2>
+        <h2><a href="#" id="text"> Profile</a></h2>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">My Profile</a></li>
             <li><a href="#">Find Connections</a></li>
         </ul>
-        <button>Sign Out</button>
+        <a href=""><button> Sign Out</button></a>
     </div>
-    <div class="container">
-        <!-- Div for main  -->
-        <div class="main">
-            <div class="profile">
-                <img src="icons/user-circle.png" alt="user.png">
-                <h2>Jane Doe</h2>
-                <p id="location"><img src="icons/map-marker.png" alt="location">Seatle</p>
-                <p>Developer | Engineer | Problem Slover</p>
-                <p>Master of shadows and Internet!</p>
-                <p id="edit"><img src="icons/gear.png" alt="gear.png"> <a href="#">edit profile</a></p>
-            </div>
-            <!-- Div for education -->
-            <div class="education">
-                <h4>Education</h4>
-                <h3>Coding Dojo - Full Stack Bootcamp</h3>
-                <p>Dec 2019 - Mar 2020</p>
-                <p>Triple black belt in Python,MERN, and  C#...</p>
+    <div class="body">
+        <div class="container">
+            <!-- Div for main  -->
+            <div class="main">
+                <div class="profile">
+                    <section id="profile">
+                        <img src="icons/user-circle.png" alt="user.png">
+                    </section>
+                    <h2>Jane Doe</h2>
+                    <p id="location"><img src="icons/map-marker.png" alt="location">&nbsp;&nbsp;Seatle</p>
+                    <p>Developer | Engineer | Problem Slover</p>
+                    <p>Master of shadows and Internet!</p>
+                    <p id="edit"><img src="icons/gear.png" alt="gear.png" id="gear"> <a href="#">edit profile</a></p>
+                </div>
+                <!-- Div for education -->
+                <div class="education">
+                    <section id="education">
+                        <p>Education</p>
+                    </section>
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p>Dec 2019 - Mar 2020</p>
+                    <p>Triple black belt in Python,MERN, and C#...</p>
+                </div>
             </div>
         </div>
         <!-- Div for side navigation -->
@@ -47,12 +56,18 @@
                     <tr>
                         <td><img src="images/todd-s.jpg" alt="tod"></td>
                         <td>Todd E</td>
-                        <td><img src="icons/accept-circle.png" alt="accept"><img src="icons/close-circle.png" alt="close"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/accept-circle.png" alt="accept" id="icon"></td>
+                        <td><img src="icons/close-circle.png" alt="close" id="icon"></td>
                     </tr>
                     <tr>
                         <td><img src="images/phil-s.jpg" alt="phil"></td>
                         <td>Phil K</td>
-                        <td><img src="icons/accept-circle.png" alt="accept"><img src="icons/close-circle.png" alt="close"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/accept-circle.png" alt="accept" id="icon"></td>
+                        <td><img src="icons/close-circle.png" alt="close" id="icon"></td>
                     </tr>
                 </table>
             </div>
@@ -82,4 +97,5 @@
         </div>
     </div>
 </body>
+
 </html>
