@@ -1,0 +1,89 @@
+/* body{ */
+    /* margin: 20px; 
+}*/
+/* html{
+    padding: 0 200px 100px 200px;
+} */
+.container *{
+    font-family: 'Dear Sans';
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-b{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-direction{
+    flex-direction: column;
+}
+
+nav{
+    background-color: silver;
+    padding: 0 80px;
+}
+
+nav>input,button{
+    border: 3px solid black;
+}
+
+nav button{
+    background-color: blue;
+    color: #fff;
+    width: 15%;
+    text-align: center;
+    height: 25px;
+    box-shadow: 5px 5px 5px 0 black;
+}
+.main{
+    width: 90%;
+    justify-content: space-evenly;
+}
+main{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.post-1, .post-2{
+    border: 3px solid black;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.likes{
+    margin: 10px;
+    width: 50%;
+}
+
+.likes button{
+    background-color: orange;
+    text-align: center;
+    height: 25px;
+    box-shadow: 5px 5px 5px 0 black;
+    /* width: ; */
+}
+
+.side-nav{
+    /* flex: 1; */
+    border: 3px solid black;
+    padding: 10px;
+    width: 15%;
+    height: 160px;
+    margin-top: 20px;
+}
+
+.side-nav button{
+    color: black;
+    background-color: #099c09a3;
+    box-shadow: 5px 5px 5px 0 black;
+}
