@@ -1,0 +1,72 @@
+body{
+    padding: 0 140px;
+}
+
+.container{
+    /* width: 50%; */
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-self: center;
+    /* padding: 30px; */
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 10px 40px;
+}
+
+body>h1{
+    display: flex;
+    justify-content: center;
+}
+
+.profile{
+    border: 3px solid black;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 250px;
+    margin: 40px;
+}
+
+.profile>*{
+    margin:  20px 0;
+}
+
+.profile>img{
+    width: 70px;
+}
+
+main{
+    margin: 0 40px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.post-1,.post-2, .post-3{
+    border: 3px solid black;
+    width: 350px;
+    padding: 20px;
+    margin: 20px;
+    /* display: flex; */
+}
+
+
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    background-color: orange;
+    text-align: center;
+    height: 25px;
+    box-shadow: 5px 5px 5px 0 black;
+    /* width: ; */
+}
