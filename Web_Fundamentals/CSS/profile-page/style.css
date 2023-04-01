@@ -1,251 +1,184 @@
-*{
+/* CSS Reset */
+
+* {
     margin: 0;
     padding: 0;
-    font-family: "Dear Sans", serif;
-
 }
 
-/* Style for navigation */
+/* styles to apply to body */
 
-.nav{
-    background-color: black;
-    color: white;
+body {
+    background-color: #f3f3f3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.flex-container, .nav-links, .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
     height: 80px;
-    text-decoration: none;
-    display: flex;
-    margin: 0px;
-    justify-content: safe;
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-.nav a{
-    color: white;
-    padding: 0 10px;
-    text-decoration: none; 
-    margin-top: 10px;
-    position: relative;
-    left: 310px;
-}
-
-#text{
-    display: flex;
-    font-size: 39px;
-    font-weight: 10px;
-}
-
-.nav ul{
-    display: flex;
-    position: relative;
-    top: 7px;
-    flex-direction: row;
+.nav-links {
+    width: 50%;
     list-style-type: none;
-    font-size: 20px;
+    align-items: center;
 }
 
-.nav li{
+.nav-links a {
+    color: #f3f3f3;
     text-decoration: none;
-    margin:20px 10px;
-
 }
 
-button{
-    color: rgba(255, 255, 255, 0.813);
-    background-color: rgba(0, 255, 255, 0.717);
-    height: 35px;
-    width: 99px;
-    margin-top: 20px;
-    position:absolute;
-    left: 190px;
-    bottom: 20px;
+.nav-links a.active {
+    color: #fff;
+    font-weight: bold;
 }
 
-.body{
-    position: relative;
-}
-
-/* Style for container */
-
-.container{
-    background-color: white;
-    width: 600px;
-    position: relative;
-    top: 0px;
-    left: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
-
-.main{
-    width: 75%;
-}
-
-.container h2{
-    margin:  60px 20px 20px 30px;
-}
-
-.container p{
-    margin-left: 20px;
-    padding: 4px;
-}
-
-.profile{
-    /* border: 5px solid grey;
-    margin: 10px; */
-    border: 5px solid silver;
-    width: 520px;
-    height: 330px;
-    display: flexbox;
-    margin: 40px 25%;
-}
-
-#profile{
-    background-color: #67bed2;
-    height: 100px;
-    margin: -5px;
-}
-
-#profile img{
-    width: 90px;
-    height: 90px;
-    border: 5px solid whitesmoke;
-    border-radius: 50%;
-    margin:50px 40px;
-}
-
-.profile img{
-    width: 10px;
-    height: 15px;
-}
-
-
-.education{
-    border: 5px solid silver;
-    border-bottom: none;
-    width: 500px;
-    height: 150px;
-    display: block;
-    margin: 40px 25%;
-    padding: 10px;
-}
-
-.education h3{
-    margin-top: 30px;
-    margin-left: 10px;
-}
-
-
-#education{
-    color: white;
-    background-color: #333030;
-    height: 50px;
-    margin-top: -40px;
-    margin: -15px;
-}
-
-#education p{
-    display: flex;
-    position: relative;
-    top: 10px;
-}
-
-
-
-
-/* styling for side-nav */
-
-.side-nav{
-    display: inline-block;
-    justify-content: right;
-    position: absolute;
-    top: 20px;
-    right: 180px;
-    /* justify-content: flex-end; */
-    align-items: end;
-    width: 400px;
-    padding: 10px;
-}
-
-.side-nav img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-span{
-    background-color: silver;
-    color: black;
-    padding:2px 9px;
-    border-radius: 45%;
-    margin: 5px;
-}
-
-/* Requests */
-
-.request, .friend{
-    border: 5px solid #b9b8b8;
-    display: inline-block;
-    justify-content: space-between;
-    margin: 20px auto;
-    width: 270px;
-}
-
-.request p, .friend p{
-    background-color: #333030;
-    color: white;
+.btn {
     height: 30px;
-    padding: 20px;
-    margin: -5px;
+    width: 100px;
+    color: #fff;
+    background-color: #17a2b8;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-#icon{
-    width: 30px;
-    height: 30px;
+.flex-container.main {
+    align-items: flex-start;
 }
-.request table{
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+
+.col-2 {
     flex: 2;
+    margin-right: 20px;
 }
 
-.request tr{
-    padding: 10px;
-    display: inline-flex;
-    justify-content: space-around;
+.col-1 {
+    flex: 1;
 }
 
-.request td{
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
+.card {
+    background-color: #fff;
+    border: 2px solid #999;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
 }
 
-/* Friends  */
 
-/* .friend{
-
-} */
-
-.friend p{
-    background-color:#333030;
-    color: white;
-    height: 30px;
+.card-header {
     padding: 20px;
-    margin: -5px;
+    background-color: #222;
+    color: #f3f3f3;
 }
 
-.friend section{
-    border-top: 5px solid #b9b8b8;
-    height: 30px;
+.card-header {
     display: flex;
     align-items: center;
-    padding: 10px;
 }
 
-.friend table{
-    margin: 10px;
+.card-body {
+    padding: 20px;
 }
 
-.friend td{
-    padding-right: 20px;
+.card-body h1, 
+.card-body h2,
+.card-body h3,
+.card-body p {
+    margin: 20px 0px;
+}
+
+.user-card .card-header {
+    background-color: #17a2b8;
+    height: 85px;
+    margin-bottom: 70px;
+    display: block;
+}
+
+.card-footer {
+    border-top: 2px solid #999;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.avatar-m {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 190px;
+    padding: 5px;
+}
+
+.icon-s {
+    height: 20px;
+}
+
+a {
+    color: #3a81e6;
+}
+
+.dates {
+    color: #777;
+}
+
+.card-list {
+    padding: 0 20px;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+.card-list-item, 
+.card-list-item > * {
+    display: flex;
+    align-items: center;
+}
+
+.card-list-item {
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.card-list-item.start {
+    justify-content: flex-start;
+}
+
+.avatar-s, .icon {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.icon {
+    height: 35px;
+}
+
+.icon, .btn {
+    cursor: pointer;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.badge {
+    font-size: 1rem;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    background-color: #999;
+    border-radius: 12px;
+    margin-right: 10px;
 }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- top navigation -->
+    <nav class="d-flex">
+        <h1>DojoWeather</h1>
+        <div class="citys d-flex ">
+            <h2 onclick="city(this)">Burbank</h2>
+            <h2 onclick="city(this)">Chicago</h2>
+            <h2 onclick="city(this)">Dallas</h2>
+        </div>
+    </nav>
+    <!-- header for the city -->
+    <div class="container">
+        <header>
+            <h2>San Jose</h2>
+            <div class="temp d-flex">
+                <p>show temperature in </p>
+                <select name="temp" id="temp" onchange="sel(this)">
+                    <option value="celcius" >&#176;C</option>
+                    <option value="fahrenheit" >&#176;F</option>
+                </select>
+            </div>
+        </header>
+        <!-- main is for weather  -->
+        <main>
+            <!-- days for weather -->
+            <div class=" day today">
+                <h1>Today</h1>
+                <img src="./assets/some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="values">
+                    <h1 class="up"><span class="current"> 24</span>&deg;</p>
+                    <h1 class="down"> <span class="current">18</span>&deg;</p>
+                </div>
+            </div>
+            <div class=" day tomorrow">
+                <h1>Tomorrow</h1>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="values">
+                    <h1 class="up"><span class="current">27</span>&deg;</p>
+                    <h1 class="down"><span class="current"> 19</span>&deg;</p>
+                </div>
+            </div>
+            <div class=" day friday">
+                <h1>Friday</h1>
+                <img src="./assets/some_clouds.png" alt="clouds">
+                <p>some clouds</p>
+                <div class="values">
+                    <h1 class="up"><span class="current">21</span>&deg;</p>
+                        <h1 class="down"><span class="current">16</span>&deg;</p>
+                </div>
+            </div>
+            <div class=" day saturday">
+                <h1>Saturday</h1>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="values">
+                    <h1 class="up"><span class="current">26</span>&deg;</p>
+                    <h1 class="down"><span class="current">21</span>&deg;</p>
+                </div>
+            </div>
+        </main> 
+    </div>
+    <!-- cookies -->
+        <div class="cookie">
+            <img src="./assets/cookie.png" alt="">
+            <div class="info">
+                <h1>Stop! Cookie Time</h1>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads,
+                    to provide social media features and to analyze our traffic.
+                    <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button class="accept" onclick="popup(this)">I Accept</button>
+        </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
