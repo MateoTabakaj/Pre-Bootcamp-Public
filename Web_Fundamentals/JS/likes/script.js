@@ -1,21 +1,12 @@
-
-var count1 = 9;
-function liked0() {
-    count1++;
-    document.getElementById("number0").innerHTML = count1;
+function liked(button,el){
+    if (button.innerHTML =="Like") {
+    document.getElementById(el).innerHTML++;
+    button.innerText= "Unlike";
+    }
+    else{
+        document.getElementById(el).innerHTML--;
+        button.innerHTML = "Like";
+    }
 }
 
 
-var count2 = 12;
-function liked1() {
-
-    count2++;
-    document.getElementById("number1").innerHTML= count2;
-}
-
-
-var count3 = 9;
-function liked2() {
-    count3++;
-    document.getElementById("number2").innerHTML = count3;
-}
