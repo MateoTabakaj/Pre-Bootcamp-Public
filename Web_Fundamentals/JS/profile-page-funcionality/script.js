@@ -3,7 +3,7 @@ console.log("page loaded...");
 function edit(el) {
     document.querySelector("#name").innerHTML = "Steff Dawidson"
 }
-var num= 1;
+// var num= 1;
 function accept(element,elId) {
     document.querySelector("#remove").innerHTML--;
     element = document.getElementById(elId);
