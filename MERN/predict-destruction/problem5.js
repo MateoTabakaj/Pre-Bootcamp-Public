@@ -10,3 +10,4 @@ console.log(key);//value
 console.log(secondKey);//1,5,1,8,3,3
 console.log(secondKey[0]);//1
 console.log(willThisWork);//5
+//dhfdt
