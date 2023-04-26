@@ -1,0 +1,18 @@
+.first{
+    background-color: aquamarine;
+}
+
+.second{
+    background-color: blue;
+}
+.general{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.display{
+    background-color: brown;
+    color: red;
+    display: inline;
+}
