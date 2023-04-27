@@ -7,6 +7,8 @@ const [lastName, setlastName] = useState("");
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
 const [comfirm, setcomfirm] = useState("");
+const [hasBeenSubmitted,setHasBeenSubmitted]= useState(false)
+
 
 const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,6 +19,8 @@ const handleSubmit = (e) => {
     setEmail("");
     setPassword("");
     setcomfirm("");
+    const newLocal = true;
+    setHasBeenSubmitted(newLocal)
 };
 
 const handleDisplay = (e) => {
@@ -29,6 +33,7 @@ const handleDisplay = (e) => {
     <p>Email: ${newUser.email}</p>
     <p>Password: ${newUser.password}</p>
     <p>Confirm Password: ${newUser.comfirm}</p>
+    ${setHasBeenSubmitted()}
     `;
 };
 
@@ -36,6 +41,9 @@ return (
     <div className="general">
     <div className="second">
     <form onSubmit={handleSubmit}>
+    {hasBeenSubmitted ? 
+        <h3>Thank you for submitting the form!</h3> :
+        <h3>Welcome, please submit the form.</h3>}
         <div>
         <label>First Name: </label>
         <input
@@ -81,7 +89,7 @@ return (
             onChange={(e) => setcomfirm(e.target.value)}
         />
         </div>
-        <button type="submit" onClick={handleDisplay}>
+        <button type="submit" value="create user" onClick={handleDisplay}>
         Create User
         </button>
     </form>
@@ -97,37 +105,34 @@ const [lastName, setLastName] = useState("");
 const [email, setEmail] = useState("");
 const [password, setPassword] = useState("");
 const [confirmPassword, setConfirmPassword] = useState("");
+const [hasBeenSubmitted, setHasBeenSubmitted] = useState(false);
 
-const handleFirstNameChange = (event) => {
-    setFirstName(event.target.value);
+const handleSubmit = (e) => {
+    e.preventDefault();
+    const newUser = { firstName, lastName, email, password, confirmPassword };
+    console.log("Welcome", newUser);
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
+    setHasBeenSubmitted(true)
 };
 
-const handleLastNameChange = (event) => {
-    setLastName(event.target.value);
-};
-
-const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-};
-
-const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-};
-
-const handleConfirmPasswordChange = (event) => {
-    setConfirmPassword(event.target.value);
-};
 
 return (
     <div className="general">
     <div className="first">
-    <form>
+    <form onSubmit={handleSubmit}>
+        {hasBeenSubmitted ? 
+        <h3>Thank you for submitting the form!</h3> :
+        <h3>Welcome, please submit the form.</h3>}
         <div>
         <label>First Name: </label>
         <input
             type="text"
             value={firstName}
-            onChange={handleFirstNameChange}
+            onChange={(event)=>setFirstName(event.target.value)}
         />
         </div>
         <div>
@@ -135,19 +140,19 @@ return (
         <input
             type="text"
             value={lastName}
-            onChange={handleLastNameChange}
+            onChange={(event)=>setLastName(event.target.value)}
         />
         </div>
         <div>
         <label>Email Address: </label>
-        <input type="email" value={email} onChange={handleEmailChange} />
+        <input type="email" value={email} onChange={(event)=> setEmail(event.target.value)} />
         </div>
         <div>
         <label>Password: </label>
         <input
             type="password"
             value={password}
-            onChange={handlePasswordChange}
+            onChange={(event)=> setPassword(event.target.value)}
         />
         </div>
         <div>
@@ -155,17 +160,20 @@ return (
         <input
             type="password"
             value={confirmPassword}
-            onChange={handleConfirmPasswordChange}
+            onChange={(event) => setConfirmPassword(event.target.value)}
         />
         </div>
+        
+        <button type="submit" value="create user" >Create user</button>
     </form>
-    <div>
+    <div className="dspl">
         <h2>Form Data:</h2>
         <p>First Name: {firstName}</p>
         <p>Last Name: {lastName}</p>
         <p>Email Address: {email}</p>
         <p>Password: {password}</p>
         <p>Confirm Password: {confirmPassword}</p>
+        <p>{setHasBeenSubmitted}</p>
     </div>
     </div>
     </div>
