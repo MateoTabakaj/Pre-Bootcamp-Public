@@ -1,41 +1,41 @@
-.container{
+.App{
     width: 950px;
     background-color: silver;
     margin: 0px auto;
     vertical-align: top ;
 }
-.top-nav {
+Header {
     height: 150px;
-    background-color: green;
+    background-color:  #6aa84f;
     width: 900px;
     margin:20px 20px;
     display: inline-block;
     vertical-align: top;
 }
 
-.side-nav {
+Navigation {
     height: 300px;
     width: 200px;
-    background-color: blue;
+    background-color:#6fa8dc;
     display: inline-block;
     margin-bottom: 65px;
     margin-left: 10px;
     vertical-align: top;
     margin-right: 10px;
 } 
-.main {
+Main {
     height: 400px;
     width: 700px;
-    background-color: red;
+    background-color:#e06666;
     display: inline-block;
     margin: 5px 5px 20px 5px;
     vertical-align: top;
 
 }
-.sub-content {
+SubContents {
     height: 200px;
     width: 210px;
-    background-color: yellow;
+    background-color:#ffd966;
     display: inline-block;
     vertical-align: top;
     margin-left: 11px;
@@ -44,10 +44,10 @@
     vertical-align: top;
 
 }
-#advertisement {
+Advertisement {
     height: 120px;
     width: 660px;
-    background-color: purple;
+    background-color: #b4a7d6;
     display: inline-block;
     vertical-align: bottom;
     margin:40px 0 0 10px;
