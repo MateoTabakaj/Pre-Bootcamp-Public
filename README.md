@@ -17,7 +17,7 @@ Here are some of my notable projects:
 - **Flex Box:** A understanding of how a web page should be bulit , built with HTML5 and CSS3.
 - **Flex Col:** A file to understand how **flex** property works, built with HTML5, CSS3.
 - ****
-
+<!-- 
 ### Node.js Projects
 
 - **Project 1:** A command-line interface (CLI) tool that generates a random password, built with Node.js and the Inquirer.js library.
@@ -31,13 +31,13 @@ Here are some of my notable projects:
 ### React Projects
 
 - **Project 1:** A movie search app that allows users to search for movies by title, built with React and the OMDB API.
-- **Project 2:** A shopping cart app that allows users to add and remove items from their cart, built with React and Redux.
+- **Project 2:** A shopping cart app that allows users to add and remove items from their cart, built with React and Redux. -->
 
 ## Usage
 
 Feel free to browse the repository and explore my projects. Each project is contained within its own directory, and includes a README file with more information about the project and how to run it.
 
-If you have any questions or feedback, don't hesitate to reach out to me at mateo.tabakaj@gmail.com.
+If you have any questions or feedback, don't hesitate to reach out to me at tabakajmateo@gmail.com.
 
 ## License
 
