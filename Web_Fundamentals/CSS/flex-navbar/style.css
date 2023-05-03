@@ -44,10 +44,11 @@ a:link {
     text-decoration: none; 
 }
 
-button{
+.btn{
     color: #fff;
     background-color: darkturquoise;
     border: 3px solid rgb(0, 0, 0);
     border-style: outset;
     box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    cursor:pointer;
 }
