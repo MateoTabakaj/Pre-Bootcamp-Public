@@ -11,8 +11,8 @@ function Tabs(props) {
         setcontent(tabs[e.target.id].content)
         const index = e.target.id;
         if (index === "2") {
-            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-        } else { }
+            window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank', 'noreferrer');   
+            } else { }
 
     }
 
