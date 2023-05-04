@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.tab{
+  margin: 10px;
+  border: 1px dashed ;
+  align-content: center;
+  width: 500px;
+  border-radius: 25px;
+}
+
+button{
+  color: whitesmoke;
+  background-color: slategrey;
+  width: 115px;
+  height: 50px;
+  margin: 10px;
+  transition: transform .2s; 
+  border-radius: 25px;
+}
+
+button:hover{
+  background-color: floralwhite;
+  transition: 1s;
+  color: red;
+  transform: scale(1.2);
+}
+
+.display{
+  text-align: center;
+  height: 220px;
+  width: 400px;
+  margin: 10px 0 0 40px; 
+  background-color: rgb(100, 147, 147); 
+  border: 1px solid ;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+
+h2{
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+
