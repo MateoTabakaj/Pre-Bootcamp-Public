@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+}
+
+button{
+  background-color: steelblue;
+  width: 80px;
+  margin:0 0 10px 10px ;
+  height: 40px;
+  border-radius: 100px;
+  color: white;
+}
+.delete{
+  background-color: aqua !important;
+}
+.list{
+  border: 1px dotted blue;
+  height: 150px;
+  width: 120px;
+}
